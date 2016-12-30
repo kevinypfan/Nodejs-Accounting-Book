@@ -1,0 +1,34 @@
+
+    <div class="col-md-3">
+        <ul class="list-group">
+            <li class="list-group-item">收入<span class="pull-right">${{ incometotal }}</span></li>
+            {{# each income}}
+            <li class="list-group-item">{{this.title}}<span class="pull-right">${{this.dollar}}</span></li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <ul class="list-group">
+            <li class="list-group-item">支出<span class="pull-right">${{ outlaytotal }}</span></li>
+            {{# each outlay}}
+            <li class="list-group-item">{{this.title}}<span class="pull-right">${{this.dollar}}</span></li>
+            {{/each}}
+         </ul>
+    </div>
+    <div class="col-md-3">
+        <ul class="list-group">
+            <li class="list-group-item">存款<span class="pull-right">${{ banktotal }}</span></li>
+            {{# each bank}}
+            <li class="list-group-item">{{this.title}}<span class="pull-right">${{this.dollar}}</span></li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <ul class="list-group">
+            <li class="list-group-item">現金<span class="pull-right">${{ cashtotal }}</span></li>
+            {{# each cash}}
+            <li class="list-group-item">{{this.title}}<span class="pull-right">${{this.dollar}}</span></li>
+            {{/each}}
+        </ul>
+    </div>
+
